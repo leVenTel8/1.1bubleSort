@@ -2,7 +2,7 @@ class BubbleSortApp
 {
     public static void main(String[] args)
     {
-        int maxSize = 10000;
+        int maxSize = 10;
         ArrayBub arr;
         arr = new ArrayBub(maxSize);
 
