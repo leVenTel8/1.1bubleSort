@@ -2,19 +2,18 @@ class BubbleSortApp
 {
     public static void main(String[] args)
     {
-        int maxSize = 10000;      // array size
-        ArrayBub arr;         // reference to array
-        arr = new ArrayBub(maxSize); // create the array
+        int maxSize = 10000;
+        ArrayBub arr;
+        arr = new ArrayBub(maxSize);
 
-       for(int j=0; j<maxSize; j++){                //Д/3 вставка на 10000
+       for(int j=0; j<maxSize; j++){
            long n = (long)(java.lang.Math.random()*(maxSize-1));
            arr.insert(n);
        }
 
-        arr.display();        // display items
+        arr.display();
+        arr.bubbleSort();
 
-        arr.bubbleSort();       // bubble sort them
-
-        arr.display();        // display them again
-    } // end main()
-} // end class BubbleSortApp
+        arr.display();
+    }
+}
