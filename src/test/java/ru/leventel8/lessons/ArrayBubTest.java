@@ -3,19 +3,27 @@
  */
 package ru.leventel8.lessons;
 
+/*импорт Junit библиотек
+ */
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 
 public class ArrayBubTest {
+  /*Junit тест вставки в массив
+
+   */
+
     @Test
     public void testInsert() {
         ArrayBub arrayBub = new ArrayBub(10);
         arrayBub.insert(5);
         assertEquals(5, arrayBub.getFirst());
     }
+    /*тест пузырьковой сортировки
 
+     */
     @Test
     public void testbubbleSort() {
         ArrayBub arrayBub = new ArrayBub(10);
