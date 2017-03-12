@@ -11,23 +11,22 @@ import static org.junit.Assert.assertEquals;
 
 
 public class ArrayBubTest {
+
   /*Junit тест вставки в массив
-
    */
-
     @Test
     public void testInsert() {
-        ArrayBub arrayBub = new ArrayBub(10);
-        arrayBub.insert(5);
-        assertEquals(5, arrayBub.getFirst());
-    }
-    /*тест пузырьковой сортировки
+        ArrayBub arrayBub = new ArrayBub(10);       //создание нового объекта ArrayBub и передача аргумента 10
+        arrayBub.insert(5);                        // в конуструктор класса
+        assertEquals(5, arrayBub.getFirst());   // сравниваем ожидаемое значение с выходным
+    }//end testInsert()
 
+    /*тест пузырьковой сортировки
      */
     @Test
     public void testbubbleSort() {
-        ArrayBub arrayBub = new ArrayBub(10);
-        arrayBub.insert(5);
+        ArrayBub arrayBub = new ArrayBub(10);   //создание нового объекта ArrayBub и передача аргумента 10
+        arrayBub.insert(5);                    // вставка значений в массив
         arrayBub.insert(4);
         arrayBub.insert(3);
         arrayBub.insert(7);
@@ -36,8 +35,7 @@ public class ArrayBubTest {
         arrayBub.insert(15);
         arrayBub.insert(1);
 
-        arrayBub.bubbleSort();
-        arrayBub.display();
-        assertEquals(1, arrayBub.getFirst());
-    }
-}
+        arrayBub.bubbleSort();                          // вызов метода пузырьковой сортировки
+        assertEquals(1, arrayBub.getFirst());   // сравниваем ожидаемое значение с выходным
+    }//end testbubbleSort()
+}//end ArrayBubTest
